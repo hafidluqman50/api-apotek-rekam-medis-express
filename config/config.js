@@ -15,7 +15,8 @@ const sequelize = new Sequelize(
     db_password,
     {
         host:db_host,
-        dialect:'postgres'
+        dialect:'postgres',
+        dialectModule:pg
     }
 )
 
