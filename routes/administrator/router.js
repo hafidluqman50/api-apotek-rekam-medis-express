@@ -11,8 +11,8 @@ adminRouter.get('/', (req,res) => {
     res.status(200).send('API Administrator!')
 })
 
-adminRouter.use('/data-obat',obatRouterAdmin)
 adminRouter.use('/user',userRouterAdmin)
+adminRouter.use('/data-obat',obatRouterAdmin)
 // adminRouter.user('/jenis-obat',jenisObatRouterAdmin)
 
 export {adminRouter}
