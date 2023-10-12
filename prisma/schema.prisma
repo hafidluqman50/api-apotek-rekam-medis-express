@@ -1,0 +1,24 @@
+datasource db {
+    provider = "postgresql"
+    url      = env("DATABASE_URL")
+}
+
+model users {
+    id Int @id @default(autoincrement())
+    name String @db.VarChar(100)
+    username String @db.VarChar(100)
+    password String @db.VarChar(100)
+    level_user Int
+    status_user Int
+    created_at DateTime @default(now())
+    updated_at DateTime @updatedAt
+}
+
+model obat {
+    id Int @id @default(autoincrement())
+    nama_obat String @db.VarChar(100)
+    jenis_obat String @db.VarChar(100)
+    stok_obat Int
+    created_at DateTime @default(now())
+    updated_at DateTime @updatedAt
+}
