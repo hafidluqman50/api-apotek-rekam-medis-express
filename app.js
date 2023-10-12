@@ -10,6 +10,6 @@ app.use('/auth',authRouter)
 app.use('/api/',guestRouter)
 app.use('/api/administrator',adminRouter)
 
-app.listen(8080,() => {
-    console.log(`Listening to http://localhost:${8080}`)
+app.listen(3000,() => {
+    console.log(`Listening to http://localhost:${3000}`)
 })
