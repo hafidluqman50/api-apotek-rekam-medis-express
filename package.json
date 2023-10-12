@@ -1,9 +1,9 @@
 {
     "type": "module",
-    "main": "app.js",
+    "main": "index.js",
     "scripts": {
-        "dev": "nodemon app.js",
-        "start": "node -r esm app.js"
+        "dev": "nodemon index.js",
+        "start": "node -r esm index.js"
     },
     "dependencies": {
         "@prisma/client": "^5.3.1",
