@@ -1,5 +1,6 @@
 import dotenv from 'dotenv'
 import mysql from 'mysql'
+import pg from 'pg'
 import {Sequelize} from 'sequelize'
 dotenv.config()
 
